@@ -1,74 +1,15 @@
-# Getting Started with Create React App
+### react-query
+- react-query는 서버 상태를 다루는 라이브러리
+- redux은 클라이언트 상태를 다루는 라이브러리
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### react query?
+    지금까지 redux toolkit(이하 rtk)을 이용해서 서버에서 데이터를 받아왔다.
+    동기, 비동기작업을 수행했고 데이터를 스토어에 저장한 후 원하는 컴포넌트에서 스토어에 저장된 데이터를 사용했다.
+    react-query는 위 작업을 간편하게 해주며 데이터 캐싱을 쉽게 처리한다.
+    데이터가 처음 fetch되는 동안 isLoading 등의 상태를 직접 선언하고 조작할 필요도 없다. react-query에서 모든 상태값과 메서드를 제공하기 때문.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+### react query 클라이언트 데이터 활용법
+    서버 데이터와 관계없이 전역적으로 다뤄야 하는 데이터들은 react-query에 임의로 저장하고 다루는 것이 아니라 컨텍스트나 전역 상태관리 라이브러리(recoil)를 사용해서 핸들링하자.
 
 ### ref
 - https://www.youtube.com/watch?v=lLWfZL-Y8lM
