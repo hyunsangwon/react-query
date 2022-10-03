@@ -16,5 +16,5 @@
 - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment (구조분해할당(Destructuring assignment) 까먹을 때 마다 보기)
 
 ### json-server
-    1. sudo npm i json-server -g
-    2. json-server -w data/db.json -p 3500
+    1. sudo npm i json-server -g (설치)
+    2. json-server -w data/db.json -p 3500 (실행)
